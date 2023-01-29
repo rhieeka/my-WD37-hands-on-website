@@ -39,7 +39,7 @@
 }
 
 .navbar a {
-  font-size: 25px;
+  font-size: 16px;
 }
 
 .navbar-nav .nav-link.active {
@@ -47,6 +47,10 @@
 }
 .navbar-nav .nav-link.active:hover {
   color: #fc29d0;
+}
+
+.dropdown-item:hover{
+background: aquamarine;
 }
 
 a.nav-link:hover {
@@ -175,8 +179,39 @@ footer {
   height: 200px;
 }
 
-
-
 .imahe4{
   width: 300px;
 }
+
+/*---===BOOTSTRAP HANDS ON 5===---*/
+.content
+{
+    background-color:gray;
+    margin:15px;
+    padding:5px;
+}
+
+.pink
+{
+    width:150px;
+    height: auto;
+    background-color: pink;
+}
+
+
+
+@media (max-width:576px)
+
+{
+    span {display:block;}
+
+    .content
+    {
+        
+        justify-content: flex-start;
+    }
+   
+}
+
+
+
