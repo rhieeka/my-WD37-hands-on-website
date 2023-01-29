@@ -19,20 +19,18 @@ h1 {
 /***************************NAVBAR**************************/
 
 nav {
- display: inline;
- 
-
+  display: inline;
 }
-.logo{
+.logo {
   height: 90px;
- float: left;
+  float: left;
   margin-right: 400px;
 }
 
 .menu-btn {
   background-color: transparent;
   color: black;
-  font-size: 20px;
+  font-size: 16px;
   border: none;
 }
 .dropdown-menu {
@@ -43,18 +41,17 @@ nav {
   display: none;
   position: absolute;
   background-color: aquamarine;
-  min-width: 200px;
+  min-width: 300px;
   z-index: 1;
 }
 .links,
 .links-hidden {
   display: inline;
   color: black;
-  padding: 12px 16px;
+  padding: 10px 14px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   justify-content: right;
- 
 }
 
 .links-hidden {
@@ -94,50 +91,50 @@ nav a:hover::after {
 }
 
 @media screen and (max-width: 820px) {
- nav{
-  display: inline;
-  width:100%;
- }
- .logo{
-  margin: 0px;
-  display: inline;
- }
+  nav {
+    display: inline;
+    width: 100%;
+  }
+  .logo {
+    margin: 0px;
+    display: inline;
+  }
 }
 @media screen and (max-width: 500px) {
-  nav{
-   display: inline;
-   width:100%;
+  nav {
+    display: inline;
+    width: 100%;
   }
-  .logo{
-   margin: 0px;
-   display: inline;
+  .logo {
+    margin: 0px;
+    display: inline;
+    height: 50px;
   }
- }
- 
+}
 
 /***********************HOMEPAGE************************************/
-.manOne{
+.manOne {
   margin-top: 100px;
   text-align: center;
-
 }
-.manImage{
+.manImage {
   border-radius: 25px;
 }
-.manText{
+.manText {
   font-weight: bold;
-font-size: 90px;
+  font-size: 90px;
+  float: right;
+  padding-bottom: 40px;
 }
 @media screen and (max-width: 500px) {
- .manImage{
-  width: 100%;
-  height: auto;
- }
- .manText{
-  font-size: 50px;
- }
- }
-
+  .manImage {
+    width: 100%;
+    height: auto;
+  }
+  .manText {
+    font-size: 50px;
+  }
+}
 /*********************************ABOUT***************************/
 .about-container h1 {
   text-align: center;
