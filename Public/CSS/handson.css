@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+.heading-one {
+  text-align: center;
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 50px;
+}
+.bt-text {
+  text-align: center;
+  color: #fc29d0;
+  font-family: oregano;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.bt-heading{
+  text-align: center;
+  font-family: Lato;
+}
+
+
+
+
+
+/*----============NAVBAR==========*/
+.navbar-toggler {
+  border-color: black;
+}
+
+.navbar-toggler-icon {
+  background-color: black;
+  height: 4px;
+  display: block;
+  margin: 2px;
+}
+
+.navbar a {
+  font-size: 25px;
+}
+
+.navbar-nav .nav-link.active {
+  color: purple;
+}
+.navbar-nav .nav-link.active:hover {
+  color: #fc29d0;
+}
+
+a.nav-link:hover {
+  color: #fc29d0;
+}
+
+.navbar-brand img {
+  height: 90px;
+  width: auto;
+  display: flex;
+}
+
+.nav-item a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: purple;
+  transition: width 0.3s;
+}
+
+.nav-item :hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+a.nav-link.dropdown-toggle::after {
+  border: none;
+}
+
+/*--======SIGN-IN CSS=====----*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*-==============FOOTER============---------*/
+footer {
+  width: 100%;
+  background-color: #009a7d;
+  text-align: center;
+  color: #fff;
+  margin: 0px;
+  padding: 50px;
+}
+
+/*-==============COL============---------*/
+.col-sm{
+  border: 4px solid purple;
+}
+
+.col-sm-4 {
+  border: 4px solid purple;
+}
+.col-md-8{
+  border: 4px solid purple;
+}
+.col-xxl-12{
+  border: 4px solid purple;
+}
+
+
+
+/*---===BOOTSTRAP HANDS ON 2===---*/
+
+.imahe1{
+  height: 200px;
+  border-top: 3px solid blue;
+  border-bottom: 3px solid blue;
+  padding: 25px;
+}
+.imahe2{
+  height:200px;
+  width:200px;
+  border-radius: 50%;
+  border:3px solid red;
+}
+.imahe3{
+  height: 200px;
+}
+
+
+
+.imahe4{
+  width: 300px;
+}
