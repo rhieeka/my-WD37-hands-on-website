@@ -1,97 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/x-icon" href="Public/images/favicon.ico" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <!--GOOGLE FONTS-->
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-     href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Oregano:ital@0;1&display=swap"
-     rel="stylesheet"
-   />
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.cdnfonts.com/css/gistesy" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Oregano:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
-   <!-- Icon library -->
-   <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-   />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-   <!-- MAIN CSS-->
-   <link rel="stylesheet" href="Public/CSS/style.css" />
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>My Profile</title>
+    <!-- MAIN CSS-->
+    <link rel="stylesheet" href="Public/CSS/style.css" />
+    <link rel="stylesheet" href="Public/CSS/handson.css" />
+
+    <title>Miss Victoria</title>
   </head>
 
   <body>
-    <!--NAVBAR-->
-    <nav>
-      <img
-        class="logo"
-        src="Public/images/kodigo-logo-transparent-png.png"
-        alt="Logo"
-      />
-
-      <a class="links active" href="index.html">Home</a>
-      <a class="links" href="about.html">About</a>
-      <a class="links" href="my-bootstrap-hands-on-blog.html">Blog</a>
-
-      <div class="dropdown-menu links">
-        <button class="menu-btn">Hands On Assignments</button>
-        <div class="menu-content">
-          <a class="links-hidden" href="my-hands-on-1.html"
-            >HTML and CSS Hands On 1</a
-          >
-          <a class="links-hidden" href="my-hands-on-2.html"
-            >HTML and CSS Hands On 2</a
-          >
-          <a class="links-hidden" href="my-hands-on-3.html"
-            >HTML and CSS Hands On 3</a
-          >
-          <a class="links-hidden" href="my-hands-on-4.html"
-            >HTML and CSS Hands On 4</a
-          >
-          <a class="links-hidden" href="my-hands-on-5.html"
-            >HTML and CSS Hands On 5</a
-          >
-          <a class="links-hidden" href="my-css-layout-hands-on-1.html"
-            >CSS Layout Hands On 1</a
-          >
-          <a class="links-hidden" href="my-css-layout-hands-on-2.html"
-            >CSS Responsive Hands On 2</a
-          >
-          <a class="links-hidden" href="my-bootstrap-hands-on-1.html"
-            >Hands On Bootstrap 1</a
-          >
-          <a class="links-hidden" href="my-bootstrap-hands-on-2.html"
-            >Hands On Bootstrap 2</a
-          >
-          <a class="links-hidden" href="my-bootstrap-hands-on-3.html"
-            >Hands On Bootstrap 3</a
-          >
-          <a class="links-hidden" href="my-bootstrap-hands-on-4.html"
-            >Hands On Bootstrap 4</a
-          >
-          <a class="links-hidden" href="my-bootstrap-hands-on-5.html"
-            >Hands On Bootstrap 5</a
-          >
+    <!-- ========== navbar========== -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="Public/images/miss-victoria.png"
+            alt="Bootstrap"
+            width="30"
+            height="24"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5 active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="my-bootstrap-hands-on-blog.html"
+                >Blog</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <div class="manOne">
-      <div style="display: inline-block">
-        <img
-          class="manImage"
-          src="https://images.rawpixel.com/image_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMi0yMDAta3dhbi0wNTYtMDIuanBn.jpg"
-          alt="myImage"
-        />
+    <section class="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h2 class="fs-2">Hello!</h2>
+            <h2 class="display-2">
+              I'm <span class="vika fw-bold">Victoria,</span>
+            </h2>
+            <h2 class="display-2">Software Developer</h2>
+            <p>🔴Plan 🟠Code 🟢Deploy</p>
+            <a
+              class="btn btn-primary"
+              href="mailto:imvicera@gmail.com"
+              role="button"
+              >Hire Me!</a
+            >
+            <a
+              class="btn btn-primary"
+              href="https://drive.google.com/file/d/1tLnC9sYwI9x6jJbyGXnNERAt5liEXPKW/view?usp=share_link"
+              role="button"
+              >My Resume</a
+            >
+          </div>
+          <div class="col-4 imahe">
+            <img
+              style="border-radius: 5%; height: 500px"
+              src="Public/images/vika.jpg"
+              alt="profix"
+            />
+          </div>
+        </div>
       </div>
-      <div style="display: inline-block">
-        <h1 class="manText">DeCoders37</h1>
-      </div>
+    </section>
+    <div class="h-divider">
+      <div class="shadow"></div>
     </div>
+    <section id="about">
+      <div class="container about">
+        <h2 class="aboutMe display-4">Little About me...</h2>
+        <div class="row">
+          <div class="col about-row">
+            <p>
+              I specialize in designing, developing, and testing computer
+              software. As a software developer, I am responsible for creating
+              functional, efficient, and user-friendly software that meets the
+              needs of businesses and consumers.
+            </p>
+            <p>
+              I have a strong background and proficiency in programming
+              languages:
+            </p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>SQL</li>
+            </ul>
+            <p>Database:</p>
+            <ul>
+              <li>MySQL</li>
+            </ul>
+            <p>Libraries/Frameworks:</p>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Sass</li>
+              <li>Node.js</li>
+              <li>Reactjs</li>
+              <li>Laravel</li>
+            </ul>
+            <p>Servers:</p>
+            <ul>
+              <li>XAMMP</li>
+              <li>Vercel</li>
+              <li>Azure</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+          <div class="col about-row">
+            <p>DevOps:</p>
+            <ul>
+              <li>Git</li>
+              <li>Github</li>
+              <li>Docker</li>
+            </ul>
+            <p>Design:</p>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>Canva</li>
+              <li>Draw.io</li>
+            </ul>
+            <p>Tools:</p>
+            <ul>
+              <li>Bash Shell</li>
+              <li>VS Code</li>
+              <li>Postman</li>
+            </ul>
+            <p>Project Management:</p>
+            <ul>
+              <li>Trello</li>
+              <li>Google Suite</li>
+            </ul>
+            <p>Soft Skills:</p>
+            <ul>
+              <li>Critical Thinker</li>
+              <li>Good team player</li>
+              <li>Problem Solver</li>
+              <li>Good Communication</li>
+              <li>Technology Trend Awareness</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="icon">
+      <h2 class="aboutMe display-4">Technology</h2>
+      <div class="container icon">
+        <img src="Public/images/html.png" alt="html5" />
+        <img src="Public/images/css.png" alt="css" />
+        <img src="Public/images/js.png" alt="js" />
+        <img src="Public/images/react-logo.png" alt="react" />
+        <img src="Public/images/tailwind-css.png" alt="tailwindCSS" />
+        <img src="Public/images/bootstrap.png" alt="bootstrap" />
+        <img src="Public/images/node-js.png" alt="nodejs" />
+        <img src="Public/images/mysql.png" alt="MySQL" />
+        <img src="Public/images/mongo-db.png" alt="mongoDB" />
+        <img src="Public/images/npm.png" alt="npm" />
+        <img src="Public/images/git.png" alt="git" />
+        <img src="Public/images/github.png" alt="github" />
+      </div>
+    </section>
+    <section id="portfolio">
+      <h2 class="aboutMe display-4">Portfolios</h2>
+      <div style="padding-left: 100px" class="container">
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-hands-on-1.html"
+              >HTML&CSS Hands On 1</a
+            >
+          </button>
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-hands-on-2.html"
+              >HTML&CSS Hands On 2</a
+            >
+          </button>
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-hands-on-3.html"
+              >HTML&CSS Hands On 3</a
+            >
+          </button>
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-hands-on-4.html"
+              >HTML&CSS Hands On 4</a
+            >
+          </button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-hands-on-5.html"
+              >HTML&CSS Hands On 5</a
+            >
+          </button>
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-css-layout-hands-on-1.html"
+              >CSS Layout Hands On 1</a
+            >
+          </button>
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-css-layout-hands-on-2.html"
+              >CSS Responsive Hands On 2</a
+            >
+          </button>
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-bootstrap-hands-on-1.html"
+              >Hands On Bootstrap 1</a
+            >
+          </button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-bootstrap-hands-on-2.html"
+              >Hands On Bootstrap 2</a
+            >
+          </button>
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-bootstrap-hands-on-3.html"
+              >Hands On Bootstrap 3</a
+            >
+          </button>
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-bootstrap-hands-on-4.html"
+              >Hands On Bootstrap 4</a
+            >
+          </button>
+          <button type="button" class="btn btn-outline-primary">
+            <a class="dropdown-item" href="my-bootstrap-hands-on-5.html"
+              >Hands On Bootstrap 5</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="facebook.com/rekascorner"
+            role="button"
+            ><i class="fa-brands fa-facebook"></i></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="mailto:imvicera@gmail.com"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/rhieeka"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
 
     <!--MAIN JS-->
     <script src="Public/js/index.js"></script>

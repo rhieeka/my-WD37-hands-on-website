@@ -9,195 +9,91 @@ body {
   color: #2e0249;
 }
 
-h1 {
-  font: Lato;
-  font-size: 60px;
-  font-weight: bold;
+.home{
+  margin-top: 70px;
+}
+.imahe{
   text-align: center;
 }
-
-
-/***************************NAVBAR**************************/
-
-nav {
-  display: inline;
-}
-.logo {
-  height: 90px;
-  float: left;
-  margin-right: 400px;
+.vika{
+  color: #009a7d;
 }
 
-.menu-btn {
-  background-color: transparent;
-  color: black;
-  font-size: 16px;
-  border: none;
-}
-.dropdown-menu {
-  position: relative;
-  display: inline-block;
-}
-.menu-content {
-  display: none;
-  position: absolute;
-  background-color: aquamarine;
-  min-width: 300px;
-  z-index: 1;
-}
-.links,
-.links-hidden {
-  display: inline;
-  color: black;
-  padding: 10px 14px;
-  text-decoration: none;
-  font-size: 16px;
-  justify-content: right;
-}
-
-.links-hidden {
-  display: block;
-}
-
-.links {
-  display: inline-block;
-}
-
-a.active {
-  color: purple;
-}
-
-.links-hidden:hover,
-.links:hover {
-  color: #f73d93;
-}
-
-.dropdown-menu:hover .menu-content {
-  display: block;
-  width: fit-content;
-}
-
-nav a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 4px;
-  background: purple;
-  transition: width 0.3s;
-}
-
-nav a:hover::after {
-  width: 100%;
-  transition: width 0.3s;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.btn-primary:hover{
   background: #009a7d;
-
 }
 
-
-@media screen and (max-width: 820px) {
-  nav {
-    display: inline;
-    width: 100%;
-  }
-  .logo {
-    margin: 0px;
-    display: inline;
-  }
-}
-@media screen and (max-width: 500px) {
-  nav {
-    display: inline;
-    width: 100%;
-  }
-  .logo {
-    margin: 0px;
-    display: inline;
-    height: 50px;
-  }
-}
-
-/***********************ABOUT************************************/
-.aboutMe{
-  font-family: Oregano;
-  margin-top: 100px;
-}
-
-.aboutText{
-  margin: 100px;
+p{
   font-size: 20px;
 }
 
-.aboutText img{
-  border-radius: 15px;
-  box-shadow: 10px 10px 8px 10px #0e0d0d70;
+/***************************NAVBAR**************************/
+.navbar{
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.container-skills {
+
+.h-divider {
+  margin: auto;
+  margin-top: 80px;
+  width: 80%;
+  position: relative;
+}
+
+.h-divider .shadow {
+  overflow: hidden;
+  height: 20px;
+}
+
+.h-divider .shadow:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
   width: 100%;
-  background-color: #ddd;
-}
-.skills {
-  text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-}
-
-.html {width: 90%; background-color: #04AA6D;}
-.css {width: 90%; background-color: #2196F3;}
-.js {width: 90%; background-color: #f44336;}
-.bootstrap {width: 90%; background-color: aquamarine;}
-.nodejs {width: 60%; background-color: #808080;}
-.expressjs {width: 60%; background-color: purple;}
-
-.aboutContact{
-  padding: 20px;
-  margin-left: 350px; 
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px black;
 }
 
 
-/***********************HOMEPAGE************************************/
-.manOne {
+/***********************ABOUT************************************/
+.about{
+  background: #009a7e63;
   margin-top: 100px;
-  text-align: center;
-}
-.manImage {
   border-radius: 25px;
-}
-.manText {
-  font-weight: bold;
-  font-size: 90px;
-  float: right;
-  padding-bottom: 50px;
-}
 
-
-@media screen and (max-width: 500px) {
-  .manImage {
-    width: 100%;
-    height: auto;
-  }
-  .manText {
-    font-size: 50px;
-  }
 }
-
-/*********************************ABOUT***************************/
-.about-container h1 {
+.aboutMe{
+  font-family: 'Gistesy', sans-serif;
+  padding: 50px;
+  text-align: center; 
+}
+.about-row{
+  border: 2px dashed #fff;
+  padding: 25px;
+}
+.icon{
   text-align: center;
+  border: 2px dashed #009a7d;
+}
+.icon img{
+      width: 50px;
+      margin: 10px;
+      justify-content: center;
+}
+#icon{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btn-group{
+  text-align:center;
+  align-content:center;
+}
+#portfolio{
   margin-bottom: 100px;
 }
-
-.about-container p {
-  margin-left: 100px;
-  margin-right: 100px;
-}
+/***************************FOOTER**************************/
 
 /******************************HANDS ON 1**********************/
 .handsOn-container h1 {
@@ -351,27 +247,9 @@ button:hover {
   margin-left: 34%;
 }
 
-footer {
-  width: 100%;
-  height: 100px;
-  color: #fff;
-  background-color: #009a7d;
-  justify-content: center;
-}
-
-footer h2 {
-  padding-top: 20px;
-}
-
 /**************************HANDS ON 4***************************/
 
-div.container {
-  background-color: #fff;
-  width: 1000px;
-  min-height: 600px;
-  margin: 0px auto;
-  padding: 10px;
-}
+
 
 .header {
   display: inline-block;
@@ -410,26 +288,7 @@ div.container {
   border-radius: 50%;
 }
 
-.about {
-  background-color: aquamarine;
-  width: 496px;
-  height: 350px;
-  margin-left: 50px;
-  margin-top: 10px;
-  display: inline-block;
-}
 
-.about h2 {
-  background-color: #009a7d;
-  color: white;
-  padding: 5px 0px 5px 20px;
-  margin-top: 0px;
-}
-
-.about p {
-  font-size: 20px;
-  margin: 20px;
-}
 
 .bottom-container {
   background-color: aquamarine;
@@ -473,24 +332,6 @@ img.technologies {
   text-align: center;
 }
 
-.footer {
-  background-color: #009a7d;
-  width: 100%;
-  min-height: 100px;
-  margin: 10px auto;
-  text-align: center;
-}
-
-.footer p {
-  text-align: center;
-  padding-top: 10px;
-}
-
-.footer img {
-  margin-left: 10px;
-  width: 20px;
-  text-align: center;
-}
 /**************************HANDS ON 5***************************/
 .periodic {
   text-align: center;
