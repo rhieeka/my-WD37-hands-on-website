@@ -9,30 +9,29 @@ body {
   color: #2e0249;
 }
 
-.home{
+.home {
   margin-top: 70px;
 }
-.imahe{
+.imahe {
   text-align: center;
 }
-.vika{
+.vika {
   color: #009a7d;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background: #009a7d;
 }
 
-p{
+p {
   font-size: 20px;
 }
 
 /***************************NAVBAR**************************/
-.navbar{
-    margin-left: 50px;
-    margin-right: 50px;
+.navbar {
+  margin-left: 50px;
+  margin-right: 50px;
 }
-
 
 .h-divider {
   margin: auto;
@@ -47,7 +46,7 @@ p{
 }
 
 .h-divider .shadow:after {
-  content: '';
+  content: "";
   display: block;
   margin: -25px auto 0;
   width: 100%;
@@ -56,41 +55,39 @@ p{
   box-shadow: 0 0 8px black;
 }
 
-
 /***********************ABOUT************************************/
-.about{
+.about {
   background: #009a7e63;
   margin-top: 100px;
   border-radius: 25px;
-
 }
-.aboutMe{
-  font-family: 'Gistesy', sans-serif;
+.aboutMe {
+  font-family: "Gistesy", sans-serif;
   padding: 50px;
-  text-align: center; 
+  text-align: center;
 }
-.about-row{
+.about-row {
   border: 2px dashed #fff;
   padding: 25px;
 }
-.icon{
+.icon {
   text-align: center;
   border: 2px dashed #009a7d;
 }
-.icon img{
-      width: 50px;
-      margin: 10px;
-      justify-content: center;
+.icon img {
+  width: 50px;
+  margin: 10px;
+  justify-content: center;
 }
-#icon{
+#icon {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.btn-group{
-  text-align:center;
-  align-content:center;
+.btn-group {
+  text-align: center;
+  align-content: center;
 }
-#portfolio{
+#portfolio {
   margin-bottom: 100px;
 }
 /***************************FOOTER**************************/
@@ -249,8 +246,6 @@ button:hover {
 
 /**************************HANDS ON 4***************************/
 
-
-
 .header {
   display: inline-block;
   background-color: #009a7d;
@@ -287,8 +282,6 @@ button:hover {
   margin-left: 50px;
   border-radius: 50%;
 }
-
-
 
 .bottom-container {
   background-color: aquamarine;
@@ -507,4 +500,52 @@ td {
     margin-top: 20px;
     margin-left: 0px;
   }
+}
+
+/* loader */
+.loader {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  background-color: #000;
+  z-index: 99;
+  text-align: center;
+}
+
+.loader img {
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  text-align: center;
+  margin: 300px 300px 300px 300px;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* scrollUP */
+.scroll{
+  width: 50px;
+  background: blue;
+  float:right;
+  color:#fff;
+  text-align: center;
+  margin: 30px;
 }
