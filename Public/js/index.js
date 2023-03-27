@@ -15,7 +15,7 @@ $(document).ready(function () {
   }, 5000); 
 });
 
-// spinner
+// scrollUp
 $("a[href='#top']").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "smooth");
   return false;
@@ -23,4 +23,4 @@ $("a[href='#top']").click(function() {
 });
 =======
 });
->>>>>>> 77ee357a5c1667e05aad148a5e2ee59dcf464f71
+
